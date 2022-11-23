@@ -1,0 +1,18 @@
+#detail{
+    display: none;
+}
+
+#bill, #tip{
+    width: 16%;
+}
+h1{
+    text-align: center;
+}
+#total,#tipAmount{
+    text-align: center;
+    padding: 2px;
+}
+table{
+    margin: 0 auto;
+    padding: 2px;
+}

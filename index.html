@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <h1 class="title is-2">Restaurant Tip Calculator</h1>
+    
+        <div class="container" style="margin-left:45%;">
+    <p class="title is-5">Enter Total Bill amount</p>
+    <input class="input is-link" type="text" id="bill" placeholder="Bill Amount">
+    </div>
+    <div class="block container" style="margin-left:45%;">
+    <p class="title is-5" style="padding-top:14px;">Enter Tip Percentage</p>
+    <input class="input is-link" type="text" id="tip" placeholder="Tip Percentage">
+        </div>
+    
+    <div class="field is-grouped is-grouped-centered">
+        <p class="control">
+          <a onclick="calculateTip()" class="button is-link">
+            Submit
+          </a>
+        </p>
+        <p class="control">
+          <a onclick="reset()" class="button is-link is-outlined">
+            Cancel
+          </a>
+        </p>
+      </div>
+    <p id="tipAmount" class="title-5"></p>
+    <p id="total"></p>
+    <div id="detail">
+        <table class="table is-bordered">
+            <tr>
+                <th>Tip Percentage </th>
+                <th>Tip Amount</th>
+                <th> Total</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th id="tip5"> </th>
+                <th id="total5"> </th>
+            </tr>
+            <tr>
+                <th>10 </th>
+                <th id="tip10"> </th>
+                <th id="total10"> </th>
+            </tr>
+            <tr>
+                <th>12 </th>
+                <th id="tip12"> </th>
+                <th id="total12"> </th>
+            </tr>
+            <tr>
+                <th>14</th>
+                <th id="tip14"> </th>
+                <th id="total14"> </th>
+            </tr>
+            <tr>
+                <th>15</th>
+                <th id="tip15"> </th>
+                <th id="total15"> </th>
+            </tr>
+            <tr>
+                <th>20</th>
+                <th id="tip20"> </th>
+                <th id="total20"> </th>
+            </tr>
+            <tr>
+                <th>25</th>
+                <th id="tip25"> </th>
+                <th id="total25"> </th>
+            </tr>
+            <tr>
+                <th>50</th>
+                <th id="tip50"> </th>
+                <th id="total50"> </th>
+            </tr>
+
+
+
+    </table></div>
+    <script src="index.js"></script>
+</body>
+</html>
